@@ -161,7 +161,12 @@ export abstract class GeneratorScene<T>
       await DependencyContext.consumePromises();
       context.save();
       context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+      // await this.draw(context);
+      startScene(this);
+      startPlayback(this.playback);
       await this.draw(context);
+      endPlayback(this.playback);
+      endScene(this);
       context.restore();
     } while (DependencyContext.hasPromises() && iterations < 10);
 

@@ -32,7 +32,7 @@ program
     process.env.PROJECT_FILE = projectFile;
     process.env.REVIDEO_PORT = port;
 
-    createServer().listen(port, () => {
+    createServer().listen(port, '0.0.0.0', () => {
       console.log(`Server listening on port ${port}`);
       console.log();
     });
@@ -49,7 +49,7 @@ program
   .option('--port <number>', 'Port on which to start the server', '9000')
   .action(async options => {
     const editor = await launchEditor(options.projectFile, options.port);
-    console.log(`Editor running on port ${editor.config.server.port}`);
+    console.log(`CxfEditor running on port ${editor.config.server.port}`);
   });
 
 program.parse(process.argv);

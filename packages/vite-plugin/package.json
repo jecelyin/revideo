@@ -1,6 +1,6 @@
 {
   "name": "@revideo/vite-plugin",
-  "version": "0.10.4",
+  "version": "100.10.4",
   "description": "A Vite plugin for revideo projects",
   "main": "lib/index.js",
   "author": "revideo",
@@ -25,7 +25,7 @@
     "@types/mime-types": "^2.1.1"
   },
   "dependencies": {
-    "@revideo/ffmpeg": "0.10.4",
+    "@revideo/ffmpeg": "100.10.4",
     "fast-glob": "^3.3.1",
     "follow-redirects": "^1.15.2",
     "formidable": "^3.5.1",

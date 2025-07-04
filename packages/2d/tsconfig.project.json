@@ -1,7 +1,13 @@
 {
   "extends": "@revideo/core/tsconfig.project.json",
   "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "ESNext"],
+    "types": ["node"],
+    "skipLibCheck": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@revideo/2d/lib"
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

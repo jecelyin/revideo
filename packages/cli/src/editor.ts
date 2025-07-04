@@ -19,6 +19,7 @@ export async function launchEditor(projectPath: string, port: string) {
       },
     },
     server: {
+      host: '0.0.0.0',
       port: parseInt(port),
     },
   });
